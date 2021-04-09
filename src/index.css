@@ -1,0 +1,24 @@
+body {
+  margin:0px;
+  width:100%;
+  font-family: Verdana;
+}
+
+.navbar-nav{
+  padding: 0;
+}
+
+.nav-link{
+  display: block;
+ font-weight: 500;
+}
+
+.nav-link:hover{
+  color: red;
+  background-color: #111;
+}
+
+.nav-link:focus{
+  color:yellow;
+text-decoration: underline;
+}

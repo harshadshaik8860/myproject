@@ -4,14 +4,13 @@ import {Carousel} from 'react-bootstrap';
 
 const Home = () => {
 
-
     return (
 <section>
         <Carousel>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="C:\Users\pandu\Desktop\webdesining\ReactJs\my-app\src\1.jpg"
+            src="C:\Users\pandu\Desktop\webdesining\ReactJs\myproject\src\1.jpg"
             height="300"
             alt="First slide"
           />
@@ -23,7 +22,7 @@ const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="C:\Users\pandu\Desktop\webdesining\ReactJs\my-app\src\2.jpg"
+            src="C:\Users\pandu\Desktop\webdesining\ReactJs\myproject\src\2.jpg"
             height="300"
             alt="Second slide"
           />
@@ -36,7 +35,7 @@ const Home = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="C:\Users\pandu\Desktop\webdesining\ReactJs\my-app\src\3.jpg"
+            src="C:\Users\pandu\Desktop\webdesining\ReactJs\myproject\src\3.jpg"
             height="300"
             alt="Third slide"
           />

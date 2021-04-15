@@ -30,18 +30,22 @@ const Header = () =>{
         <Link to="/contactus" className="nav-link"><FontAwesomeIcon icon="phone-alt" size="lg" className="p-1"/>Contact Us</Link>
       </li>
       <li>
-        <Link to="/login" className="nav-link"><FontAwesomeIcon icon="user" size="lg" className="p-1"/>Login</Link>
-      </li>
-      <li>
         <Link to="/6/signup" className="nav-link"><FontAwesomeIcon icon="users" size="lg"className="p-1"/>Register</Link>
       </li>
-
+      
+      <li>
+        <Link to="/" className="nav-link" onClick={Logout}><i className="fa fa-power-off" size="lg"> </i>Welcome {localStorage.getItem("name")} - Logout</Link>
+      </li>
     </ul>
-  </div>
-  
+
+  </div> 
 </nav>
-                
-            );
+           
+ );
         
+}
+const Logout = () =>{
+  localStorage.clear();
+  window.location.reload();
 }
 export default Header;

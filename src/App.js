@@ -16,6 +16,12 @@ import PageNumber from './signup';
 
 
 function App() {
+  if(localStorage.getItem("userid")==null){
+    return(
+      <Login />
+    )
+  }else{
+  
   return (
     <HashRouter>
   
@@ -31,6 +37,7 @@ function App() {
       </HashRouter>
   
   );
+}
 }
 library.add(fab, faCheckSquare, faCoffee, faHouseUser, faUsers, faUser, faPhoneAlt, faExclamationCircle)
 export default App;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 class Login extends Component {
 
@@ -61,6 +62,10 @@ goLogin = () =>{
                             </div>
                             <div className="card-footer text-center">
                                 <button className="btn btn-secondary" onClick={this.goLogin}>Login</button>
+                                <hr className="bg-primary"/>
+                                <div>
+                                    Don't have an acoount? <Link to="/6/signup">Register</Link>
+                                </div>
                             </div>
                         </div>
                     </div>

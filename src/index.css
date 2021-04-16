@@ -2,7 +2,10 @@ body {
   margin:0px;
   width:100%;
   font-family: Verdana;
+  background-color: grey;
 }
+
+  
 
 .navbar-nav{
   padding: 0;

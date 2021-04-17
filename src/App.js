@@ -11,7 +11,8 @@ import ContactUs from './contactus';
 import AboutUs from './aboutus';
 import Login from './login';
 //import SignUp from './signup';
-import PageNumber from './signup';
+import Register from './signup';
+
 
 
 
@@ -32,7 +33,7 @@ function App() {
       <Route path="/contactus" component={ContactUs}/>
       <Route path="/aboutus" component={AboutUs}/>
       <Route path="/login" component={Login}/>
-      <Route path="/:userid/signup" component={PageNumber}/>
+      <Route path="/:userid/signup" component={Register}/>
       
       </HashRouter>
   

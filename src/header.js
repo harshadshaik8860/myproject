@@ -32,6 +32,9 @@ const Header = () =>{
       <li>
         <Link to="/6/signup" className="nav-link"><FontAwesomeIcon icon="users" size="lg"className="p-1"/>Register</Link>
       </li>
+      <li>
+        <Link to="/state" className="nav-link"><FontAwesomeIcon icon="users" size="lg"className="p-1"/>Register</Link>
+      </li>
       
       <li>
         <Link to="/" className="nav-link" onClick={Logout}><i className="fa fa-power-off" size="lg"> </i>Welcome {localStorage.getItem("name")} - Logout</Link>

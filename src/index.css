@@ -5,7 +5,11 @@ body {
   background-color: grey;
 }
 
-  
+  .link{
+    display: inline;
+    float: left;
+    margin:2%;
+  }
 
 .navbar-nav{
   padding: 0;

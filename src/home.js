@@ -1,52 +1,44 @@
 import React from 'react';
-import {Carousel} from 'react-bootstrap';
+
 
 
 const Home = () => {
 
     return (
-
-        <Carousel>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="C:\Users\pandu\Desktop\webdesining\ReactJs\myproject\myproject\src\1.jpg"
-            height="500"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="C:\Users\pandu\Desktop\webdesining\ReactJs\myproject\myproject\src\2.jpg"
-            height="300"
-            alt="Second slide"
-          />
-      
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="C:\Users\pandu\Desktop\webdesining\ReactJs\myproject\myproject\src\3.jpg"
-            height="300"
-            alt="Third slide"
-          />
-      
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-     
+      <section className="p-5 bg-primary">
+        
+      <div className="row back">
+        <div className="col-md-12">
+          <div className="text-center bg-white">
+            </div>
+            <marquee>
+              <div className="row">
+                <div className="col-md-3">
+              <div className="card bg-secondary">
+                <p className="text-center p-5">Google Ads</p>
+                </div>
+              </div>
+              <div className="col-md-3">
+              <div className="card">
+                <p className="text-center p-5">Facebook Ads</p>
+                </div>
+              </div>
+              <div className="col-md-3">
+              <div className="card">
+                <p className="text-center p-5">Instagram Ads</p>
+                </div>
+              </div>
+              <div className="col-md-3">
+              <div className="card">
+                <div className="text-center p-5">Ourservices</div>
+                </div>
+              </div>
+              </div>
+            </marquee>
+          </div>
+          </div>
+          
+      </section>
     );
 
 }

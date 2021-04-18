@@ -1,14 +1,17 @@
 import {useState , useEffect} from 'react';
+import { Link , useParams } from 'react-router-dom';
 
 const Services = () =>{
 
-    const[products , updateProducts] = useState([]);
+    const[products, updateProducts] = useState([]);
 
     const getProduct = () =>{
         fetch("service.json")
         .then(response=>response.json())
         .then(result=>updateProducts(result))
     }
+
+    const {id} = useParams();
 
     useEffect(()=>{
         getProduct();
@@ -17,41 +20,43 @@ const Services = () =>{
     return(
         <div className="container">
             <div className="row">
-                <div className=" col-md-12 text-success text-center">
+                <div className="col-md-12 text-success text-center">
                     <h2> No of products : {products.length}</h2>
                 </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-6"></div>
-                    <div className="col-md-6 form-group">
-                       <div className="row">
+                
+                   <div className="row mt-5"> 
+                <div className="col-md-6">
+                <ul className="list-group">
+                    <li className="list-group-item active"> Available Products</li>
+                
+                
                 {
                     products.map((xpro , index)=>{
                         return(
-                            
-                            <div className="col-md-12 form-group">
-                                    <a href=""><div className="card">
-                                        <div className="card-header text-center" key={index}>  
-                                        <h5>{xpro.name}</h5>
-                                        </div>
-                                        <div className="card-body text-center">
-                                                 <img src={xpro.Photo} className="img-fluid rounded"/>
-                                        </div>
-                                        <div className="card-footer text-center">
-                                        <p>{xpro.About}</p>
-                                        </div>
-                                     </div></a>
-                                     </div>
-                                    
- 
-                        )
+                            <li className="list-group-item text-center"><Link to={`/${index}/services`}>{xpro.name}</Link></li>
+                                
+                        );
                     })
                 }
+                </ul>
                 </div>
+                <div className="col-md-6">
+                                    <div class="card">
+                                        <div className="card-header text-center">
+                                    <p>{products[id].name}</p>
+                                    </div>
+                                    <div className="card-body">
+                                    <img src={products[id].Photo} className="img-fluid rounded text-center"/>
+                                    </div>
+                                    <div className="card-footer text-center">
+                                    <p>{products[id].About}</p>
+                                    </div>
+                                    </div>
+                                    
+                            </div>
+               </div>
                 </div>
-                </div>
-                </div>
-               
+                </div>        
 
     )
 

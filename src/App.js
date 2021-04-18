@@ -28,8 +28,8 @@ function App() {
   
       <Header/>
       <Route exact path="/" component={Home}/>
-      <Route exact path="/services" component={Services}/>
-      <Route exact path="/advertisement" component={Advertisement}/>
+      <Route exact path="/:id/services" component={Services}/>
+      <Route exact path="/:userid/advertisement" component={Advertisement}/>
       <Route path="/contactus" component={ContactUs}/>
       <Route path="/aboutus" component={AboutUs}/>
       <Route path="/login" component={Login}/>

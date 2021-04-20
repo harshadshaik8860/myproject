@@ -1,0 +1,14 @@
+[
+    {
+        "category" : "web",
+        "product":[ "webdesign", "webtemplate"]
+    },
+    {
+        "category" : "advertising",
+        "product":[ "Google", "Facbook","Instagram"]
+    },
+    {
+        "category" : "Mobiles",
+        "product":[ "Lenovo"]
+    }
+]

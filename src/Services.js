@@ -3,7 +3,13 @@ import { Link , useParams } from 'react-router-dom';
 
 const Services = () =>{
 
-    const[products, updateProducts] = useState([]);
+    const temp = {
+                        "name" : "abc",
+                        "About":"nice",
+                        "Photo":"1.jpg"
+    }
+
+    const[products, updateProducts] = useState([temp]);
 
     const getProduct = () =>{
         fetch("service.json")
@@ -40,7 +46,8 @@ const Services = () =>{
                 }
                 </ul>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-4">
+                    <Link to="">
                                     <div class="card">
                                         <div className="card-header text-center">
                                     <p>{products[id].name}</p>
@@ -52,8 +59,9 @@ const Services = () =>{
                                     <p>{products[id].About}</p>
                                     </div>
                                     </div>
-                                    
-                            </div>
+                                    </Link>
+                                    </div>
+                            
                </div>
                 </div>
                 </div>        

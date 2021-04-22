@@ -39,29 +39,28 @@ const Advertisement = () =>{
                         {
                             data.map((xpro , index)=>{
                                 return(
-                                <li className="list-group-item"><Link to={`/${index}/advertisement`}>{xpro.category} </Link></li>
+                                <li className="list-group-item"><Link to={`/${index}/advertisement`} key={index}>{xpro.category} </Link></li>
                             );
                         })
                         }
                     </ul>
                 </div>
                         <div className="col-md-9">
-
-                        {
-                            data.map((xp , index)=>{
-                                return(
-                                  <> 
+                            <div className="row">
                                 <Products
-                                key={index}
-                                name={xp.product}/>
-
-                                <br/>
-                                </>
-
                                 
-                                )
-                            })
-                        }
+                                       name={data.product[0]} 
+                                       
+                                />
+                                <Products
+                                
+                               
+                                        name={data.product[1]} 
+                                        />
+                                       
+                               
+                                </div>
+                                
                         
                     </div>
                 

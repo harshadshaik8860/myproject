@@ -1,10 +1,15 @@
 import React from 'react';
+import conditionalrendering from './Components/conditionalrendering';
 
 
-
-const Home = () => {
-
-    return (
+const Home = (props) => {
+  
+    
+     return(
+      //  <div>
+      //  {props.name}
+      //  </div>
+     
       <section className="p-5 bg-primary">
         
       <div className="row back">
@@ -37,9 +42,11 @@ const Home = () => {
             </marquee>
           </div>
           </div>
-          
+          {/* {props.login} {props.home} */}
       </section>
-    );
+      
+      );
+    
 
 }
 export default Home;

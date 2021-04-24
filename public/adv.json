@@ -1,14 +1,5 @@
 [
-    {
-        "category" : "web",
-        "product":[ "webdesign", "webtemplate"]
-    },
-    {
-        "category" : "advertising",
-        "product":[ "Google", "Facbook","Instagram"]
-    },
-    {
-        "category" : "Mobiles",
-        "product":[ "Lenovo"]
-    }
+    {"name":"Facebook", "About":"Learn More", "Photo":"1.jpg"},
+    {"name":"Google Ads", "About":"Learn More", "Photo":"1.jpg"},
+    {"name":"Instagram", "About":"Learn More", "Photo":"1.jpg"}
 ]

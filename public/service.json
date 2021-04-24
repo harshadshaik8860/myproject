@@ -1,5 +1,6 @@
-   [
-    {"name":"Google Ads","About":"Learn More", "Photo":"1.jpg"},
-    {"name":"Facebook", "About":"Learn More", "Photo":"1.jpg"},
-    {"name":"InstaGram", "About":"Learn More", "Photo":"1.jpg"}
+
+[
+    {"name":"Webdesign", "About":"Learn More", "Photo":"1.jpg"},
+    {"name":"React", "About":"Learn More", "Photo":"1.jpg"},
+    {"name":"JavaScript", "About":"Learn More", "Photo":"1.jpg"}
 ]

@@ -51,7 +51,7 @@ const Multiproducts = () => {
                     <div className="card">
                       <div className="card-header"></div>
                       <div className="card-body">
-                        {product[id].service}
+                        {service[id].service}
                       </div>
                       <div className="card-footer"></div>
                     </div>

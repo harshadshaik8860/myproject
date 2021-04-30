@@ -1,0 +1,10 @@
+[
+    {
+        "category" : "webdesing",
+        "service" : ["front end", "back-end", "fullstack"]
+    },
+    {
+        "category" : "Ad services",
+        "service": ["Google", "facebook", "instagram"]
+    }
+]

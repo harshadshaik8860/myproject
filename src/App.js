@@ -13,6 +13,7 @@ import Login from './login';
 //import SignUp from './signup';
 import Register from './signup';
 import Conditionalrendering from './Components/conditionalrendering';
+import Multiproducts from './multiproducts';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
       <Route path="/contactus" component={ContactUs}/>
       <Route path="/aboutus" component={AboutUs}/>
       <Route path="/login" component={Login}/>
+      <Route path="/:id/array" component={Multiproducts}/>
       <Route path="/:userid/signup" component={Register}/>
 
       </HashRouter>   

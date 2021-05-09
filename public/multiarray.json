@@ -1,10 +1,15 @@
 [
     {
-        "category" : "webdesing",
-        "service" : ["front end", "back-end", "fullstack"]
+        "title" : "webdesing",
+        "service" : ["front end", "back-end", "fullstack","Java","PhP","Angular"]
     },
     {
-        "category" : "Ad services",
+        "title" : "Ad services",
         "service": ["Google", "facebook", "instagram"]
+    },
+    {
+        "title":"Electronics",
+            
+        "service":["Lenovo","MI"]
     }
 ]

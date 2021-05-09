@@ -43,6 +43,7 @@ function App() {
       <Route path="/:id/array" component={Multiproducts}/>
       <Route path="/:userid/signup" component={Register}/>
 
+
       </HashRouter>   
       <Conditionalrendering/>
       </BrowserRouter>

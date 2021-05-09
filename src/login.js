@@ -9,10 +9,49 @@ class Login extends Component {
             email: '',
             password: '',
             message1: '',
-            message2: ''
+            message2: '',
+            count : 20,
+            msg:'',
+            msg2:''
         }
     }
 
+    componentDidMount(){
+        this.interval = setInterval(this.tick, 1000)
+    }
+
+    componentWillUnmount(){ 
+      
+        clearInterval(this.interval)
+        
+    }
+    
+    
+    tick = ()=>{
+               
+                if(this.state.count !== 0){
+                    
+                    this.setState({
+                        count : this.state.count -1,
+                        msg2:"Page will expire in.."
+                    })
+                    
+                
+            }else{
+                if(this.state.count === 0){
+                    
+                this.setState({
+                    msg:<i className='fa fa-redo'>Please Refresh the page</i>,
+                   
+                }) 
+               
+                }
+        } 
+        
+    }
+    
+ 
+    
     processEmail = (obj) =>{
             this.setState({
                 email : obj.target.value
@@ -60,6 +99,12 @@ goLogin = () =>{
                                     onChange={this.processPassword}/>
                                 </div>
                             </div>
+                            <div className="mt-auto">
+                                <h6 className="text-center text-danger">{this.state.msg2}</h6>
+                            <p className="text-center text-success">{this.state.count} s</p>
+                            <div className="text-center mb-4 text-primary"><a href="/login">{this.state.msg}</a></div>
+                            </div>
+                            
                             <div className="card-footer text-center">
                                 <button className="btn btn-secondary btn-block" onClick={this.goLogin}>Login</button>
                                 <hr className="bg-primary"/>

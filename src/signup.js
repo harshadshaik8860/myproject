@@ -2,6 +2,7 @@
 import React ,{Component} from 'react';
 import { Link} from 'react-router-dom';
 import axios from 'axios';
+import Redirect from 'react-router-dom';
 
 class Register extends Component{
     constructor(){
@@ -9,7 +10,8 @@ class Register extends Component{
       this.state ={
         userdata : [],
         fname:'', mobile:'', email:'', Lname:'', dob:'', address:'', oth:'', male:'',
-        fmale:'', city:'', agree:'', state:'', pass1:'', repass1:'', msg:''
+        fmale:'', city:'', agree:'', state:'', pass1:'', repass1:'', msg:'',
+       
        
       }
     }
@@ -93,6 +95,7 @@ processAgree =(obj)=>{
     agree:obj.target.value
   })
 }
+
 
  render(){
   return (
@@ -287,7 +290,10 @@ processAgree =(obj)=>{
         <div className="col-md-2"></div>
       </div>
     </div>
+   
   )
+  
 }
+
 }
 export default Register;

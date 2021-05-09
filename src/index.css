@@ -40,3 +40,15 @@ body {
   color:yellow;
 text-decoration: underline;
 }
+
+
+.code{
+  float:left;
+  margin :auto;
+  width:250px;
+}
+
+.sub-menu li{
+  display: inline-block;
+  padding: 0 6px;
+}
